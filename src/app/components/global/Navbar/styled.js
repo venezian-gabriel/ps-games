@@ -18,18 +18,30 @@ export const Wrapper = styled.div`
   align-items: center;
 `;
 
-export const Nav = styled.nav`
-  display: flex;
-  justify-content: space-between;
-`;
-
 export const Ctas = styled.ul`
   display: flex;
   column-gap: 2.4rem;
+`;
 
-  li {
-    list-style: none;
-    color: #fff;
-    cursor: pointer;
+export const Nav = styled.nav`
+  display: flex;
+  justify-content: space-between;
+
+  ul:nth-child(2) {
+    li {
+      list-style: none;
+      color: #fff;
+      position: relative;
+
+      &:hover::after {
+        content: '';
+        position: absolute;
+        block-size: 0.1rem;
+        inline-size: 100%;
+        background: #fff;
+        inset-block-end: -0.1rem;
+        inset-inline-start: 0;
+      }
+    }
   }
 `;

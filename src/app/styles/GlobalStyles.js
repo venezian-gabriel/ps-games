@@ -51,8 +51,6 @@ const GlobalStyles = createGlobalStyle`
   }
 
   img {
-    max-inline-size: 100%;
-    block-size: auto;
     display: block;
   }
 `;

@@ -2,27 +2,27 @@
   user-select: none;
 }
 
-img {
+.hero img {
   inline-size: 100%;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
+.hero .swiper-button-prev,
+.hero .swiper-button-next {
   opacity: 0;
   color: #fff;
 }
 
-.swiper-pagination {
+.hero .swiper-pagination {
   opacity: 0;
 }
 
-.swiper-pagination-bullet,
-.swiper-pagination-bullet-active {
+.hero .swiper-pagination-bullet,
+.hero .swiper-pagination-bullet-active {
   opacity: 0.6;
   background: #fff;
 }
 
-.swiper-pagination-bullet-active {
+.hero .swiper-pagination-bullet-active {
   opacity: 1;
   transform: scale(1.4);
 }

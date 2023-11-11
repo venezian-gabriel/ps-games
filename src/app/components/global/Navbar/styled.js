@@ -18,11 +18,6 @@ export const Wrapper = styled.div`
   align-items: center;
 `;
 
-export const Ctas = styled.ul`
-  display: flex;
-  column-gap: 2.4rem;
-`;
-
 export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
@@ -44,4 +39,9 @@ export const Nav = styled.nav`
       }
     }
   }
+`;
+
+export const Ctas = styled.ul`
+  display: flex;
+  column-gap: 2.4rem;
 `;

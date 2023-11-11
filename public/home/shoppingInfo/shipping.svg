@@ -1,0 +1,18 @@
+<svg width="176" height="90" viewBox="0 0 176 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.4" d="M33.4572 77.5L141.5 78.1819" stroke="#B0B0B0" stroke-width="1.2" stroke-linecap="round"/>
+<path d="M134 29H40.0001V41H134V29Z" fill="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M79.0001 60.0818H97.0001V27.0818H79.0001V60.0818Z" fill="#ADADAD"/>
+<g style="mix-blend-mode:multiply" opacity="0.4">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M46.0001 45.0818H133V41.0818H46.0001V45.0818Z" fill="#B0B0B0"/>
+</g>
+<path d="M132 40.0818V78.0818H45.0001V70.0579" stroke="#484848" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M97.0001 58.0818L94.0003 55.0818L91.0002 58.0818L88.0001 55.0818L85 58.0818L82.0002 55.0818L79.0001 58.0818" stroke="#484848" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M50.0001 65.0818H65.0001V62.0818H50.0001V65.0818Z" fill="#ADADAD"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M50.0001 69.0818H59.0001V66.0818H50.0001V69.0818Z" fill="#ADADAD"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M49.0001 73.0818H61.0001V70.0818H49.0001V73.0818Z" fill="#ADADAD"/>
+<path d="M70.6259 41.0818H40.0001V29.0818H134V41.0818H130.968" stroke="#484848" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M51.99 53.0818C50.8885 53.0818 49.8767 53.6879 49.3555 54.659C48.8347 55.6281 48.8896 56.8066 49.498 57.7241L51.99 61.0818L54.5022 57.7241C55.1126 56.8029 55.1656 55.6209 54.6398 54.6498C54.1143 53.678 53.0952 53.0749 51.99 53.0818Z" fill="#ADADAD"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M48.1415 62.0462H55.858V51.9001H48.1415V62.0462Z" fill="#ADADAD"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M52.2042 57.5578C51.5391 57.5578 51.0001 57.0171 51.0001 56.3497C51.0001 55.6833 51.5391 55.1423 52.2042 55.1423C52.8692 55.1423 53.408 55.6833 53.408 56.3497C53.408 57.0171 52.8692 57.5578 52.2042 57.5578Z" stroke="white" stroke-width="0.8" stroke-linecap="round" stroke-linejoin="round"/>
+<path opacity="0.4" d="M31.0222 77.5H26.1522" stroke="#B0B0B0" stroke-width="1.2" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,23 @@
+.games {
+  margin-block-start: 8rem;
+}
+
+.games .swiper-button-prev,
+.games .swiper-button-next {
+  opacity: 0;
+  background: #0072b7;
+  color: #fff;
+  block-size: 4rem;
+  inline-size: 4rem;
+  border-radius: 50%;
+}
+
+.games .swiper-button-prev::after,
+.games .swiper-button-next::after {
+  font-size: 1.8rem;
+}
+
+.games:hover .swiper-button-prev,
+.games:hover .swiper-button-next {
+  opacity: 1;
+}

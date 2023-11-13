@@ -1,6 +1,7 @@
 'use client';
 import Navbar from './components/global/Navbar';
 import Hero from './components/home/Hero';
+import Games from './components/home/Games';
 import Badges from './components/home/Badges';
 import Banner from './components/home/Banner';
 import ShoppingInfo from './components/home/ShoppingInfo';
@@ -11,6 +12,7 @@ export default function Home() {
     <>
       <Navbar />
       <Hero />
+      <Games />
       <Badges />
       <Banner />
       <ShoppingInfo />

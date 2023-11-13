@@ -3,6 +3,7 @@
 }
 
 .hero img {
+  block-size: auto;
   inline-size: 100%;
 }
 

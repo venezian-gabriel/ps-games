@@ -1,8 +1,8 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const StyledFooter = styled.footer`
   display: flex;
-  block-size: 8rem;
+  block-size: 10rem;
   inline-size: 100%;
   align-items: center;
   background: #2d1060;

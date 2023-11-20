@@ -1,12 +1,13 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Card = styled.div`
-  block-size: 40rem;
+  block-size: 39.2rem;
   inline-size: 22.4rem;
   background: #fff;
   border-radius: 1rem;
   display: flex;
   flex-direction: column;
+  position: relative;
 
   img {
     padding: 1.2rem;
@@ -15,10 +16,27 @@ export const Card = styled.div`
   }
 `;
 
+export const Label = styled.span`
+  position: absolute;
+  font-size: 1.2rem;
+  line-height: 1;
+  color: #fff;
+  padding: 0.8rem;
+  border-radius: 1rem;
+  background-color: #0072b7;
+  inset-block-start: 1rem;
+  inset-inline-end: 1rem;
+`;
+
 export const Information = styled.div`
   padding-inline: 2.4rem;
   padding-block: 1.4rem;
   border-block-start: 0.1rem solid #ebebeb;
+
+  s {
+    display: block;
+    block-size: 1.7rem;
+  }
 
   s,
   p {

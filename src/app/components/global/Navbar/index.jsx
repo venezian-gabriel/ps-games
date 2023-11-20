@@ -1,10 +1,10 @@
-import { ShippingInfo, Wrapper, Nav, Ctas } from './styled';
-import Container from '../Container';
-import Link from 'next/link';
-import Image from 'next/image';
-import logo from '../../../../../public/global/logo/logo.svg';
-import email from '../../../../../public/global/navbar/email.svg';
-import cart from '../../../../../public/global/navbar/cart.svg';
+import { ShippingInfo, Wrapper, Nav, Ctas } from "./styled";
+import Container from "../Container";
+import Link from "next/link";
+import Image from "next/image";
+import logo from "../../../../../public/global/logo/logo.svg";
+import email from "../../../../../public/global/navbar/email.svg";
+import cart from "../../../../../public/global/navbar/cart.svg";
 
 export default function Navbar() {
   return (
@@ -20,21 +20,12 @@ export default function Navbar() {
             </Link>
             <Ctas>
               <li>
-                <Link href="/ps5">PS5</Link>
-              </li>
-              <li>
-                <Link href="/ps4">PS4</Link>
-              </li>
-              <li>
-                <Link href="/psp">PSP</Link>
-              </li>
-              <li>
                 <Link href="/sobre">SOBRE</Link>
               </li>
             </Ctas>
             <Ctas>
               <li>
-                <Link href="mailto:gabriel.venezian@hotmail.com">
+                <Link href="mailto:gabriel.venezian@hotmail.com?subject=Atendimento PS Games&body=Olá, visitei o site da PS Games e tenho interesse nos seguintes jogos...">
                   <Image width="auto" height="auto" src={email} alt="Email" />
                 </Link>
               </li>

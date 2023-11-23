@@ -28,6 +28,11 @@ export const Nav = styled.nav`
       color: #fff;
       position: relative;
 
+      a {
+        display: flex;
+        block-size: 2.5rem;
+      }
+
       &:hover::after {
         content: '';
         position: absolute;

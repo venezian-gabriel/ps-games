@@ -9,6 +9,7 @@ import Footer from '../components/global/Footer';
 import Image from 'next/image';
 import convertToBrazilianCurrency from '@/app/utils/convertToBrazilianCurrency';
 import generateInstallmentValue from '@/app/utils/generateInstallmentValue';
+import capitalize from '../utils/capitalize';
 import Link from 'next/link';
 import { useCart } from '../context/Cart/CartContext';
 
@@ -23,10 +24,6 @@ export default function Product() {
     else router.replace('/404');
   };
 
-  const capitalize = (string) => {
-    return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
-  };
-
   const addProductToCart = (e, product) => {
     e.preventDefault();
     addToCart(product);
@@ -34,6 +31,11 @@ export default function Product() {
   };
 
   useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'instant',
+    });
     const link = window.location.pathname;
     findProduct(link);
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -79,7 +81,7 @@ export default function Product() {
               >
                 Comprar
               </Link>
-              <Link href="#" onClick={(e) => addProductToCart(e, product)}>
+              <Link href="" onClick={(e) => addProductToCart(e, product)}>
                 Adicionar ao carrinho
               </Link>
             </div>

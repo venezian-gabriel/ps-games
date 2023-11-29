@@ -49,4 +49,24 @@ export const Nav = styled.nav`
 export const Ctas = styled.ul`
   display: flex;
   column-gap: 2.4rem;
+
+  li:nth-child(2) {
+    position: relative;
+
+    span {
+      position: absolute;
+      color: #fff;
+      inset-block-start: -0.8rem;
+      inset-inline-end: -1.4rem;
+      font-size: 1rem;
+      border: 1px solid #fff;
+      border-radius: 50%;
+      block-size: 1.6rem;
+      inline-size: 1.6rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      line-height: 1;
+    }
+  }
 `;

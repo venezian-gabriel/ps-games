@@ -6,7 +6,7 @@ export const ShippingInfo = styled.div`
   color: #fff;
   font-size: 1.4rem;
   text-align: center;
-  padding-block: 0.8rem;
+  padding-block: 1.2rem;
   line-height: 1;
 `;
 

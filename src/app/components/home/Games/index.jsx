@@ -1,28 +1,17 @@
-import Container from "../../global/Container";
-import "swiper/css";
-import "swiper/css/navigation";
-import "./styles.css";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
-import gameCatalog from "@/app/gameCatalog";
-import Link from "next/link";
-import { Card, Information, Label } from "./styled";
-import Image from "next/image";
+import Container from '../../global/Container';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import './styles.css';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Navigation } from 'swiper/modules';
+import gameCatalog from '@/app/gameCatalog';
+import Link from 'next/link';
+import { Card, Information, Label } from './styled';
+import Image from 'next/image';
+import convertToBrazilianCurrency from '@/app/utils/convertToBrazilianCurrency';
+import generateInstallmentValue from '@/app/utils/generateInstallmentValue';
 
 export default function Games() {
-  const convertToBrazilianCurrency = (value) => {
-    return value
-      .toLocaleString("pt-br", {
-        style: "currency",
-        currency: "BRL",
-      })
-      .replace(",00", "");
-  };
-
-  const generateInstallmentValue = (value) => {
-    return convertToBrazilianCurrency(value / 10);
-  };
-
   return (
     <Container>
       <Swiper

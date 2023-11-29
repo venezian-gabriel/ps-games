@@ -1,8 +1,14 @@
 'use client';
 import React, { createContext, useReducer, useContext } from 'react';
 
+const isLocalStorageAvailable = () => {
+  return typeof localStorage !== 'undefined';
+};
+
 const initialState = {
-  cart: JSON.parse(localStorage.getItem('cart')) || [],
+  cart: isLocalStorageAvailable()
+    ? JSON.parse(localStorage.getItem('cart')) || []
+    : [],
 };
 
 const actionTypes = {

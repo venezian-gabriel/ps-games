@@ -10,10 +10,12 @@ import Image from 'next/image';
 import convertToBrazilianCurrency from '@/app/utils/convertToBrazilianCurrency';
 import generateInstallmentValue from '@/app/utils/generateInstallmentValue';
 import Link from 'next/link';
+import { useCart } from '../context/Cart/CartContext';
 
 export default function Product() {
   const [product, setProduct] = useState(null);
   const router = useRouter();
+  const { addToCart } = useCart();
 
   const findProduct = (link) => {
     const product = gameCatalog.find((game) => game.link === link);
@@ -21,9 +23,15 @@ export default function Product() {
     else router.replace('/404');
   };
 
-  function capitalize(string) {
+  const capitalize = (string) => {
     return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();
-  }
+  };
+
+  const addProductToCart = (e, product) => {
+    e.preventDefault();
+    addToCart(product);
+    router.push('/carrinho');
+  };
 
   useEffect(() => {
     const link = window.location.pathname;
@@ -71,7 +79,9 @@ export default function Product() {
               >
                 Comprar
               </Link>
-              <Link href="#">Adicionar ao carrinho</Link>
+              <Link href="#" onClick={(e) => addProductToCart(e, product)}>
+                Adicionar ao carrinho
+              </Link>
             </div>
           </BuyBox>
         </Container>
